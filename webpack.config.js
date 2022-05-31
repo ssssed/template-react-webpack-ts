@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/index.tsx'),
+  entry: path.resolve(__dirname, './src/index/index.tsx'),
   mode: 'development',
   devServer: {
     static: './development',
@@ -40,7 +40,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|jpeg|gif|jpg|woff(2)?|eot|ttf|otf)$/i,
+        test: /\.(png|jpeg|gif|jpg|woff(2)?|eot|ttf|otf|svg)$/i,
         use: ['file-loader'],
       },
       {},
