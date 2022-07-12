@@ -1,6 +1,6 @@
 import React from 'react'
 
-const App = () => {
+const App: React.FC = () => {
   console.log('Я работаю!');
   
   return (
