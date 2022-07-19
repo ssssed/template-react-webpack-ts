@@ -1,10 +1,10 @@
 import React from 'react'
 
-const App: React.FC = () => {
-  console.log('Я работаю!');
-  
+const App: React.FC = () => {  
   return (
-    <div><h1>React work!</h1></div>
+    <div>
+      <h1>React work!</h1>
+    </div>
   )
 }
 
